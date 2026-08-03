@@ -14,6 +14,8 @@ const App = ({title}) => {
     <Card title = "Despicable Me"/>
     <Card title = "Minions"/>
     <Card title = "Cars"/>
+    <Card title = "How to Train Your Dragon"/>
+    <Card title = "Wreck it Ralph"/>
 
     </div>
   )
