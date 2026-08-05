@@ -1,7 +1,10 @@
-import { useState } from "react"
+import { useState ,useEffect  } from "react"
 
 const Card = ( {title} ) => {
   const [hasLiked, setHasLiked] = useState(false);
+  useEffect(() => {
+    console.log(`${title} has been liked:${hasLiked}`);
+  });
   return(
     <div className="card">
       <h2>{title}</h2>
@@ -19,9 +22,6 @@ const App = () => {
     <Card title = "Kung Fu Panda"/>
     <Card title = "Despicable Me"/>
     <Card title = "Minions"/>
-    <Card title = "Cars"/>
-    <Card title = "How to Train Your Dragon"/>
-    <Card title = "Wreck it Ralph"/>
 
     </div>
   )
